@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Controller-->
+        <scene sceneID="1mD-ZN-5ZB">
+            <objects>
+                <viewController id="hw3-vc-0e0" customClass="GameController" customModule="INDG_Menno_Laan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HuD-dX-bS9"/>
+                        <viewControllerLayoutGuide type="bottom" id="OIO-bO-AVl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wr0-kv-8O9">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6L-2m-cT4" customClass="CustomButton" customModule="INDG_Menno_Laan" customModuleProvider="target">
+                                <rect key="frame" x="60" y="316" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="GeJ-d5-N0S"/>
+                                    <constraint firstAttribute="width" constant="80" id="S7Z-B5-mJl"/>
+                                </constraints>
+                                <state key="normal" title="1 bamboo">
+                                    <color key="titleColor" red="0.08235294118" green="0.27450980390000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BambooSelected1:" destination="hw3-vc-0e0" eventType="touchUpInside" id="50Z-eF-Nvl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U27-Ze-C4b" customClass="CustomButton" customModule="INDG_Menno_Laan" customModuleProvider="target">
+                                <rect key="frame" x="328" y="316" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="bOp-Zn-glL"/>
+                                    <constraint firstAttribute="width" constant="80" id="uJF-MS-pEo"/>
+                                </constraints>
+                                <state key="normal" title="2 bamboo">
+                                    <color key="titleColor" red="0.08235294118" green="0.27450980390000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BambooSelected2:" destination="hw3-vc-0e0" eventType="touchUpInside" id="zdA-qY-I7O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB9-BP-ozh" customClass="CustomButton" customModule="INDG_Menno_Laan" customModuleProvider="target">
+                                <rect key="frame" x="596" y="316" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="bCT-7F-ojc"/>
+                                    <constraint firstAttribute="width" constant="80" id="vs1-Vx-dEW"/>
+                                </constraints>
+                                <state key="normal" title="3 bamboo">
+                                    <color key="titleColor" red="0.08235294118" green="0.27450980390000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BambooSelected3:" destination="hw3-vc-0e0" eventType="touchUpInside" id="6Sb-Jk-OoH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cX-ZH-Z2w" customClass="CustomButton" customModule="INDG_Menno_Laan" customModuleProvider="target">
+                                <rect key="frame" x="318" y="157" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="GDh-O3-RgU"/>
+                                    <constraint firstAttribute="width" constant="100" id="mgM-np-0Rm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="tintColor" red="0.35518281190000001" green="0.7054837223" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.08235294118" green="0.27450980390000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startTapped:" destination="hw3-vc-0e0" eventType="touchUpInside" id="Cq1-kF-x58"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HT7-2n-c21">
+                                <rect key="frame" x="606" y="157" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="VGM-rt-Cjj"/>
+                                    <constraint firstAttribute="width" constant="100" id="e2E-gB-FN7"/>
+                                </constraints>
+                                <state key="normal" image="redpanda"/>
+                                <state key="disabled" image="redpanda-grey"/>
+                                <state key="selected" image="redpanda-grey"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gy-vO-g85">
+                                <rect key="frame" x="30" y="157" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="lsN-oJ-PIb"/>
+                                    <constraint firstAttribute="height" constant="100" id="uTv-wA-pUR"/>
+                                </constraints>
+                                <state key="normal" image="bluepanda"/>
+                                <state key="disabled" image="bluepanda-grey"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DA0-0N-wQr">
+                                <rect key="frame" x="50" y="0.0" width="636" height="100"/>
+                                <color key="tintColor" red="0.082352941176470587" green="0.27450980392156865" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aQk-xK-CIJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.25098039215686274" green="0.63137254901960782" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.082352941176470587" green="0.27450980392156865" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7v-eb-BFl" customClass="CustomButton" customModule="INDG_Menno_Laan" customModuleProvider="target">
+                                <rect key="frame" x="318" y="211" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="P11-il-jWU"/>
+                                    <constraint firstAttribute="height" constant="35" id="zWL-gA-Jsw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="tintColor" red="0.35518281190000001" green="0.7054837223" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleColor" red="0.08235294118" green="0.27450980390000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startTapped:" destination="hw3-vc-0e0" eventType="touchUpInside" id="Eyv-kK-VpJ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bSd-xg-bpT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79982801219999999" green="1" blue="0.65499209260000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="P6L-2m-cT4" firstAttribute="leading" secondItem="Wr0-kv-8O9" secondAttribute="leadingMargin" constant="40" id="3XK-X1-4uw"/>
+                            <constraint firstItem="DA0-0N-wQr" firstAttribute="top" secondItem="Wr0-kv-8O9" secondAttribute="topMargin" id="4nN-Vr-tcl"/>
+                            <constraint firstItem="2cX-ZH-Z2w" firstAttribute="centerY" secondItem="Wr0-kv-8O9" secondAttribute="centerY" constant="-32.5" id="6Du-OW-dRs"/>
+                            <constraint firstItem="U27-Ze-C4b" firstAttribute="centerX" secondItem="Wr0-kv-8O9" secondAttribute="centerX" id="BuV-l6-pVK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DA0-0N-wQr" secondAttribute="trailing" constant="30" id="EIg-lI-9Cp"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="P6L-2m-cT4" secondAttribute="bottom" constant="18" id="EZs-0Q-EN7"/>
+                            <constraint firstItem="0Gy-vO-g85" firstAttribute="centerY" secondItem="Wr0-kv-8O9" secondAttribute="centerY" id="I8A-PL-FPZ"/>
+                            <constraint firstItem="E7v-eb-BFl" firstAttribute="centerY" secondItem="Wr0-kv-8O9" secondAttribute="centerY" constant="21.5" id="MEf-Xb-yPC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HT7-2n-c21" secondAttribute="trailing" constant="10" id="T9j-Hp-bQB"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zB9-BP-ozh" secondAttribute="bottom" constant="18" id="VXv-Se-9eK"/>
+                            <constraint firstItem="E7v-eb-BFl" firstAttribute="centerX" secondItem="Wr0-kv-8O9" secondAttribute="centerX" id="XYU-fp-8uW"/>
+                            <constraint firstItem="HT7-2n-c21" firstAttribute="centerY" secondItem="Wr0-kv-8O9" secondAttribute="centerY" id="Y16-3m-2eJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zB9-BP-ozh" secondAttribute="trailing" constant="40" id="YQq-NA-gWZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="U27-Ze-C4b" secondAttribute="bottom" constant="18" id="dLc-iW-Xn7"/>
+                            <constraint firstItem="DA0-0N-wQr" firstAttribute="leading" secondItem="Wr0-kv-8O9" secondAttribute="leadingMargin" constant="30" id="gmX-pl-eTf"/>
+                            <constraint firstItem="0Gy-vO-g85" firstAttribute="leading" secondItem="Wr0-kv-8O9" secondAttribute="leadingMargin" constant="10" id="q8z-0H-mbP"/>
+                            <constraint firstItem="2cX-ZH-Z2w" firstAttribute="centerX" secondItem="Wr0-kv-8O9" secondAttribute="centerX" id="z1Y-as-3ZJ"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="ShowPlayerTurnMessage" destination="DA0-0N-wQr" id="oD7-Cv-cWO"/>
+                        <outlet property="btn1Bamboo" destination="P6L-2m-cT4" id="lB5-jK-aQs"/>
+                        <outlet property="btn2Bamboo" destination="U27-Ze-C4b" id="VTJ-QD-WGS"/>
+                        <outlet property="btn3Bamboo" destination="zB9-BP-ozh" id="089-Dj-zH1"/>
+                        <outlet property="btnMenu" destination="E7v-eb-BFl" id="Lbd-zy-K1L"/>
+                        <outlet property="btnStart" destination="2cX-ZH-Z2w" id="dIV-lU-gn7"/>
+                        <outlet property="player1" destination="0Gy-vO-g85" id="WRh-wp-4rC"/>
+                        <outlet property="player2" destination="HT7-2n-c21" id="QHL-yb-Ejr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0h-Sl-EC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="-132"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="INDG_Menno_Laan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yN-O5-vY7" customClass="CustomButton" customModule="INDG_Menno_Laan" customModuleProvider="target">
+                                <rect key="frame" x="43" y="147" width="120" height="120"/>
+                                <accessibility key="accessibilityConfiguration" label="Multiplayer"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="eVf-mz-ryL"/>
+                                    <constraint firstAttribute="height" constant="120" id="wmW-eg-R7e"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Panda vs Panda">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="hw3-vc-0e0" kind="show" identifier="PvP" id="2Lu-JF-gXT"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Redpanda.png" translatesAutoresizingMaskIntoConstraints="NO" id="4nP-1o-Zvb">
+                                <rect key="frame" x="248" y="101" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="CvV-xC-FR4"/>
+                                    <constraint firstAttribute="height" constant="240" id="m2s-Nu-uSE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQh-mb-CFC" customClass="CustomButton" customModule="INDG_Menno_Laan" customModuleProvider="target">
+                                <rect key="frame" x="572" y="147" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="QfZ-X3-6jp"/>
+                                    <constraint firstAttribute="width" constant="120" id="nM3-r6-fd4"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Panda vs AI">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="hw3-vc-0e0" kind="show" identifier="AI" id="wkJ-AP-TF0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79982801222843536" green="1" blue="0.65499209261983715" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2yN-O5-vY7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="6mE-fM-7lQ"/>
+                            <constraint firstItem="NQh-mb-CFC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E8c-1d-ozI"/>
+                            <constraint firstItem="2yN-O5-vY7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Nh4-x3-sGW"/>
+                            <constraint firstItem="4nP-1o-Zvb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="14" id="Nvv-MI-Vso"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NQh-mb-CFC" secondAttribute="trailing" constant="24" id="fuZ-5u-Ncc"/>
+                            <constraint firstItem="NQh-mb-CFC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mrv-Y2-Djh"/>
+                            <constraint firstItem="4nP-1o-Zvb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uag-Uy-e2H"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="btnKittenvsAI" destination="NQh-mb-CFC" id="dw9-dk-x95"/>
+                        <outlet property="btnKittenvsKitten" destination="2yN-O5-vY7" id="TCW-iQ-ZYY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Redpanda.png" width="530" height="490"/>
+        <image name="bluepanda" width="530" height="490"/>
+        <image name="bluepanda-grey" width="530" height="490"/>
+        <image name="redpanda" width="530" height="490"/>
+        <image name="redpanda-grey" width="530" height="490"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wkJ-AP-TF0"/>
+    </inferredMetricsTieBreakers>
+</document>
