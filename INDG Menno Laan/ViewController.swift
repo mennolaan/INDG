@@ -31,6 +31,10 @@ class ViewController: UIViewController {
         {
             Game.sharedInstance.UseAI=true
         }
+        else
+        {
+            Game.sharedInstance.UseAI=false
+        }
     }
 
 }

@@ -17,9 +17,11 @@ class GameController: UIViewController {
     @IBOutlet var player2: UIButton!
     @IBOutlet var btnMenu: CustomButton!
     @IBOutlet var ShowPlayerTurnMessage: UILabel!
+    @IBOutlet var lblAMountLeft: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.DisableButtons()
         self.DrawBamboo(Game.sharedInstance.BambooStock)
         self.SetMessage("Don't take the last one! Computer will decide wich player goes first.")
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,6 +44,7 @@ class GameController: UIViewController {
     func StartGame()
     {
         self.btnMenu.hidden=true
+        self.lblAMountLeft.hidden=false
         self.player1.layer.removeAllAnimations()
         self.player2.layer.removeAllAnimations()
         self.btnStart.hidden=true 
@@ -52,7 +55,7 @@ class GameController: UIViewController {
     
     func ShowPlayerTurn()
     {
-        
+        self.lblAMountLeft.text=Game.sharedInstance.BambooStock.description + " left"
         self.player1.enabled=false
         self.player2.enabled=false
         self.EnableButton()
@@ -97,6 +100,7 @@ class GameController: UIViewController {
     {
         if(Game.sharedInstance.BambooStock==0)
         {
+            self.lblAMountLeft.hidden=true
             self.btnStart.hidden=false
             self.btnMenu.hidden=false
             self.btnStart.setTitle( "Replay" , forState: UIControlState.Normal )
@@ -115,6 +119,7 @@ class GameController: UIViewController {
     {
         if(Game.sharedInstance.PlayerTurn.AI)
         {
+            self.DisableButtons()
             let seconds = 2.0
             let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
             let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
@@ -127,9 +132,9 @@ class GameController: UIViewController {
     
     func DisableButtons()
     {
-        self.btn1Bamboo.enabled = false
-        self.btn2Bamboo.enabled = false
-        self.btn3Bamboo.enabled = false
+        self.btn1Bamboo.hidden = true
+        self.btn2Bamboo.hidden = true
+        self.btn3Bamboo.hidden = true
     }
     
     func BambooGrab(amount:Int)
@@ -161,16 +166,16 @@ class GameController: UIViewController {
         
         switch(Game.sharedInstance.BambooStock) {
         case 1 :
-             self.btn1Bamboo.enabled = true
+             self.btn1Bamboo.hidden = false
                 break;
         case 2 :
-            self.btn1Bamboo.enabled = true
-            self.btn2Bamboo.enabled = true
+            self.btn1Bamboo.hidden = false
+            self.btn2Bamboo.hidden = false
                 break;
         default:
-            self.btn1Bamboo.enabled = true
-            self.btn2Bamboo.enabled = true
-            self.btn3Bamboo.enabled = true
+            self.btn1Bamboo.hidden = false
+            self.btn2Bamboo.hidden = false
+            self.btn3Bamboo.hidden = false
             break;
         }
     }

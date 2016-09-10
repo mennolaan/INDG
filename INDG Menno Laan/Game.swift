@@ -68,8 +68,12 @@ class Game: NSObject {
         // If computer is choosen player 1 is computer
         self.Player1=Player()
         self.Player1.ID = 0
-        self.Player1.Name = "Blue Panda"
         self.Player1.AI=UseAI
+        self.Player1.Name = "Blue Panda"
+        if(UseAI)
+        {
+            self.Player1.Name = "AI Panda"
+        }   
         
         self.Player2=Player()
         self.Player2.ID = 1
