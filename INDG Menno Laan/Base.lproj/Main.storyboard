@@ -122,6 +122,9 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awr-hR-LTF">
                                 <rect key="frame" x="318" y="108" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rr3-eq-oSm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.94117647058823528" green="0.49411764705882355" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -149,6 +152,7 @@
                             <constraint firstItem="Awr-hR-LTF" firstAttribute="centerX" secondItem="Wr0-kv-8O9" secondAttribute="centerX" id="3ua-u1-2ta"/>
                             <constraint firstItem="DA0-0N-wQr" firstAttribute="top" secondItem="Wr0-kv-8O9" secondAttribute="topMargin" id="4nN-Vr-tcl"/>
                             <constraint firstItem="2cX-ZH-Z2w" firstAttribute="centerY" secondItem="Wr0-kv-8O9" secondAttribute="centerY" constant="-32.5" id="6Du-OW-dRs"/>
+                            <constraint firstItem="Awr-hR-LTF" firstAttribute="top" secondItem="DA0-0N-wQr" secondAttribute="bottom" constant="8" id="92a-1x-1aQ"/>
                             <constraint firstItem="U27-Ze-C4b" firstAttribute="centerX" secondItem="Wr0-kv-8O9" secondAttribute="centerX" id="BuV-l6-pVK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DA0-0N-wQr" secondAttribute="trailing" constant="30" id="EIg-lI-9Cp"/>
                             <constraint firstAttribute="bottomMargin" secondItem="P6L-2m-cT4" secondAttribute="bottom" constant="18" id="EZs-0Q-EN7"/>
